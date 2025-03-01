@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Video reference for player movement: https://www.youtube.com/watch?v=4HpC--2iowE
+
+
     // Reference to Character Controller
     public CharacterController controller;
     public Transform cam;
