@@ -962,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 2134961517}
+  cam: {fileID: 330585546}
   speed: 6
   smoothTurn: 0.1
   smoothTurnVelocity: 0
