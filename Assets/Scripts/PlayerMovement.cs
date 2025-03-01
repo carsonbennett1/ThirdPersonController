@@ -60,4 +60,23 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
+
+
+    int score = 0;
+    public GameObject winText;
+    public int winScore;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Coin")
+        {
+            other.gameObject.SetActive(false);
+            score++;
+
+            if (score >= winScore)
+            {
+                winText.SetActive(true);
+            }
+        }
+    }
 }
