@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    // Video reference for UI and Score updating: https://www.youtube.com/watch?v=NwJthsBdmcA
 
     int score = 0;
     public GameObject winText;
