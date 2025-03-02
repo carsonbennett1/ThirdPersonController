@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -65,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
     int score = 0;
     public GameObject winText;
     public int winScore;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -72,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             score++;
+            scoreText.text = $"Score: {score}";
 
             if (score >= winScore)
             {
